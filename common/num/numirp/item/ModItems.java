@@ -11,8 +11,8 @@ import num.numirp.item.ItemPickaxe;
 
 public class ModItems {
     public static Item itemProcessed;
-    public static ItemStack gemSapphire, gemGreenSapphire, gemRuby,
-            ingotCopper, ingotTin, ingotSilver, dustNikolite, ingotTungsten;
+    public static ItemStack gemSapphire, gemGreenSapphire, gemRuby, ingotCopper, ingotTin, ingotSilver, dustNikolite,
+            ingotTungsten;
 
     // Pickaxes
     public static Item pickaxeRuby, pickaxeGreenSapphire, pickaxeSapphire;
@@ -21,8 +21,7 @@ public class ModItems {
         itemProcessed = new ItemProcessed(ItemIDs.PROCESSED_ID);
         GameRegistry.registerItem(itemProcessed, "itemProcessed");
         for (int i = 0; i < Strings.PROCESSED.length; i++) {
-            LanguageRegistry.addName(new ItemStack(itemProcessed, 1, i),
-                    Strings.PROCESSED_NAMES[i]);
+            LanguageRegistry.addName(new ItemStack(itemProcessed, 1, i), Strings.PROCESSED_NAMES[i]);
         }
 
         gemRuby = new ItemStack(itemProcessed, 1, 0);
@@ -42,11 +41,19 @@ public class ModItems {
         OreDictionary.registerOre("ingotSilver", ingotSilver);
         OreDictionary.registerOre("dustNikolite", dustNikolite);
         OreDictionary.registerOre("ingotTungsten", ingotTungsten);
-        
+
         // Pickaxes
         pickaxeRuby = new ItemPickaxe(ItemIDs.PICKAXE_RUBY_ID, 0);
+        GameRegistry.registerItem(pickaxeRuby, "pickaxeRuby");
+        LanguageRegistry.addName(new ItemStack(pickaxeRuby, 1), Strings.PICKAXES[0]);
+        
         pickaxeGreenSapphire = new ItemPickaxe(ItemIDs.PICKAXE_GREEN_SAPPHIRE_ID, 1);
+        GameRegistry.registerItem(pickaxeGreenSapphire, "pickaxeGreenSapphire");
+        LanguageRegistry.addName(new ItemStack(pickaxeGreenSapphire, 1), Strings.PICKAXES[1]);
+        
         pickaxeSapphire = new ItemPickaxe(ItemIDs.PICKAXE_SAPPHIRE_ID, 2);
+        GameRegistry.registerItem(pickaxeSapphire, "pickaxeSapphire");
+        LanguageRegistry.addName(new ItemStack(pickaxeSapphire, 1), Strings.PICKAXES[2]);
 
     }
 }

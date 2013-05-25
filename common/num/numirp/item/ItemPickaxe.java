@@ -26,6 +26,16 @@ public class ItemPickaxe extends ItemTool {
         setMaxDamage(220);
 
         materialType = type;
+        
+        if(type == 0) {
+            setUnlocalizedName("pickaxeRuby");
+        } else if(type == 1) {
+            setUnlocalizedName("pickaxeGreenSapphire");
+        } else if(type == 2) {
+            setUnlocalizedName("pickaxeSapphire");
+        } else {
+            setUnlocalizedName("pickaxeUnknown");
+        }
     }
 
     @Override

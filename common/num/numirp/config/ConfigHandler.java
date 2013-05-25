@@ -28,6 +28,12 @@ public class ConfigHandler {
             Values.WORLDGEN_NIKOLITE = conf.get("World Generation", "Nikolite Generation", Values.WORLDGEN_NIKOLITE_DEFAULT).getBoolean(Values.WORLDGEN_NIKOLITE_DEFAULT);
             Values.WORLDGEN_TUNGSTEN = conf.get("World Generation", "Tungsten Generation", Values.WORLDGEN_TUNGSTEN_DEFAULT).getBoolean(Values.WORLDGEN_TUNGSTEN_DEFAULT);
 
+            ItemIDs.PICKAXE_RUBY_ID = conf.getItem("pickaxeRuby", ItemIDs.PICKAXE_RUBY_ID_DEFAULT).getInt(
+                    ItemIDs.PICKAXE_RUBY_ID_DEFAULT);
+            ItemIDs.PICKAXE_GREEN_SAPPHIRE_ID = conf.getItem("pickaxeGreenSaphire", ItemIDs.PICKAXE_GREEN_SAPPHIRE_ID_DEFAULT).getInt(
+                    ItemIDs.PICKAXE_GREEN_SAPPHIRE_ID_DEFAULT);
+            ItemIDs.PICKAXE_SAPPHIRE_ID = conf.getItem("pickaxeSaphire", ItemIDs.PICKAXE_SAPPHIRE_ID_DEFAULT).getInt(
+                    ItemIDs.PICKAXE_SAPPHIRE_ID_DEFAULT);
             
             ItemIDs.PROCESSED_ID = conf.getItem("processed",
                     ItemIDs.PROCESSED_ID_DEFAULT).getInt(
