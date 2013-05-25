@@ -64,15 +64,15 @@ public class ModItems {
         LanguageRegistry.addName(new ItemStack(pickaxeSapphire, 1), Strings.PICKAXES[2]);
 
         // Shovels
-        shovelRuby = new ItemShovel(ItemIDs.SHOVEL_RUBY_ID, 0);
+        shovelRuby = new ItemRPShovel(ItemIDs.SHOVEL_RUBY_ID, ruby);
         GameRegistry.registerItem(shovelRuby, "shovelRuby");
         LanguageRegistry.addName(new ItemStack(shovelRuby, 1), Strings.SHOVELS[0]);
         
-        shovelGreenSapphire = new ItemShovel(ItemIDs.SHOVEL_GREEN_SAPPHIRE_ID, 1);
+        shovelGreenSapphire = new ItemRPShovel(ItemIDs.SHOVEL_GREEN_SAPPHIRE_ID, greenSapphire);
         GameRegistry.registerItem(shovelGreenSapphire, "shovelGreenSapphire");
         LanguageRegistry.addName(new ItemStack(shovelGreenSapphire, 1), Strings.SHOVELS[1]);
         
-        shovelSapphire = new ItemShovel(ItemIDs.SHOVEL_SAPPHIRE_ID, 2);
+        shovelSapphire = new ItemRPShovel(ItemIDs.SHOVEL_SAPPHIRE_ID, sapphire);
         GameRegistry.registerItem(shovelSapphire, "shovelSapphire");
         LanguageRegistry.addName(new ItemStack(shovelSapphire, 1), Strings.SHOVELS[2]);
 
