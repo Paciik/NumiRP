@@ -2,12 +2,14 @@ package num.numirp.item;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.oredict.OreDictionary;
 import num.numirp.lib.ItemIDs;
 import num.numirp.lib.Strings;
-import num.numirp.item.ItemPickaxe;
+import num.numirp.item.ItemRPPickaxe;
 
 public class ModItems {
     public static Item itemProcessed;
@@ -45,15 +47,19 @@ public class ModItems {
         OreDictionary.registerOre("ingotTungsten", ingotTungsten);
 
         // Pickaxes
-        pickaxeRuby = new ItemPickaxe(ItemIDs.PICKAXE_RUBY_ID, 0);
+        EnumToolMaterial ruby = EnumHelper.addToolMaterial("RUBY", 2, 500, 8.0F, 3, 12);
+        EnumToolMaterial greenSapphire = EnumHelper.addToolMaterial("GREENSAPPHIRE", 2, 500, 8.0F, 3, 12);
+        EnumToolMaterial sapphire = EnumHelper.addToolMaterial("SAPPHIRE", 2, 500, 8.0F, 3, 12);
+        
+        pickaxeRuby = new ItemRPPickaxe(ItemIDs.PICKAXE_RUBY_ID, ruby);
         GameRegistry.registerItem(pickaxeRuby, "pickaxeRuby");
         LanguageRegistry.addName(new ItemStack(pickaxeRuby, 1), Strings.PICKAXES[0]);
         
-        pickaxeGreenSapphire = new ItemPickaxe(ItemIDs.PICKAXE_GREEN_SAPPHIRE_ID, 1);
+        pickaxeGreenSapphire = new ItemRPPickaxe(ItemIDs.PICKAXE_GREEN_SAPPHIRE_ID, greenSapphire);
         GameRegistry.registerItem(pickaxeGreenSapphire, "pickaxeGreenSapphire");
         LanguageRegistry.addName(new ItemStack(pickaxeGreenSapphire, 1), Strings.PICKAXES[1]);
         
-        pickaxeSapphire = new ItemPickaxe(ItemIDs.PICKAXE_SAPPHIRE_ID, 2);
+        pickaxeSapphire = new ItemRPPickaxe(ItemIDs.PICKAXE_SAPPHIRE_ID, sapphire);
         GameRegistry.registerItem(pickaxeSapphire, "pickaxeSapphire");
         LanguageRegistry.addName(new ItemStack(pickaxeSapphire, 1), Strings.PICKAXES[2]);
 
