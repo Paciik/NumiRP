@@ -14,6 +14,8 @@ public class ItemIDs {
     public static int AXE_RUBY_ID_DEFAULT = 6857;
     public static int AXE_GREEN_SAPPHIRE_ID_DEFAULT = 6858;
     public static int AXE_SAPPHIRE_ID_DEFAULT = 6859;
+    
+    public static int SICKLE_RUBY_ID_DEFAULT = 6860;
 
     public static int PROCESSED_ID;
     
@@ -28,5 +30,7 @@ public class ItemIDs {
     public static int AXE_RUBY_ID;
     public static int AXE_GREEN_SAPPHIRE_ID;
     public static int AXE_SAPPHIRE_ID;
+
+    public static int SICKLE_RUBY_ID;
 
 }
