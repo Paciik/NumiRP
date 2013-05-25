@@ -14,8 +14,9 @@ public class ModItems {
     public static ItemStack gemSapphire, gemGreenSapphire, gemRuby, ingotCopper, ingotTin, ingotSilver, dustNikolite,
             ingotTungsten;
 
-    // Pickaxes
+    // Tools
     public static Item pickaxeRuby, pickaxeGreenSapphire, pickaxeSapphire;
+    private static Item shovelRuby, shovelGreenSapphire, shovelSapphire;
 
     public static void init() {
         itemProcessed = new ItemProcessed(ItemIDs.PROCESSED_ID);
@@ -54,6 +55,19 @@ public class ModItems {
         pickaxeSapphire = new ItemPickaxe(ItemIDs.PICKAXE_SAPPHIRE_ID, 2);
         GameRegistry.registerItem(pickaxeSapphire, "pickaxeSapphire");
         LanguageRegistry.addName(new ItemStack(pickaxeSapphire, 1), Strings.PICKAXES[2]);
+
+        // Shovels
+        shovelRuby = new ItemShovel(ItemIDs.SHOVEL_RUBY_ID, 0);
+        GameRegistry.registerItem(shovelRuby, "shovelRuby");
+        LanguageRegistry.addName(new ItemStack(shovelRuby, 1), Strings.SHOVELS[0]);
+        
+        shovelGreenSapphire = new ItemShovel(ItemIDs.SHOVEL_GREEN_SAPPHIRE_ID, 1);
+        GameRegistry.registerItem(shovelGreenSapphire, "shovelGreenSapphire");
+        LanguageRegistry.addName(new ItemStack(shovelGreenSapphire, 1), Strings.SHOVELS[1]);
+        
+        shovelSapphire = new ItemShovel(ItemIDs.SHOVEL_SAPPHIRE_ID, 2);
+        GameRegistry.registerItem(shovelSapphire, "shovelSapphire");
+        LanguageRegistry.addName(new ItemStack(shovelSapphire, 1), Strings.SHOVELS[2]);
 
     }
 }

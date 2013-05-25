@@ -13,4 +13,6 @@ public class Strings {
             "Silver Ingot", "Nikolite Dust", "Tungsten Ingot" };
     public static final String[] PICKAXES = { "Ruby Pickaxe",
         "Green Sapphire Pickaxe", "Sapphire Pickaxe"};
+    public static final String[] SHOVELS = { "Ruby Shovel",
+        "Green Sapphire Shovel", "Sapphire Shovel"};
 }
