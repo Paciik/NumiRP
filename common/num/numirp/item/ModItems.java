@@ -18,8 +18,9 @@ public class ModItems {
 
     // Tools
     public static Item pickaxeRuby, pickaxeGreenSapphire, pickaxeSapphire;
-    private static Item shovelRuby, shovelGreenSapphire, shovelSapphire;
-    private static Item axeRuby,axeGreenSapphire, axeSapphire;
+    public static Item shovelRuby, shovelGreenSapphire, shovelSapphire;
+    public static Item axeRuby,axeGreenSapphire, axeSapphire;
+    public static Item sickleRuby;
 
     public static void init() {
         itemProcessed = new ItemProcessed(ItemIDs.PROCESSED_ID);
@@ -89,5 +90,10 @@ public class ModItems {
         GameRegistry.registerItem(axeSapphire, "axeSapphire");
         LanguageRegistry.addName(new ItemStack(axeSapphire, 1), Strings.AXES[2]);
 
+        // Sickles
+        sickleRuby = new ItemRPSickle(ItemIDs.SICKLE_RUBY_ID, ruby);
+        GameRegistry.registerItem(sickleRuby, "sickleRuby");
+        LanguageRegistry.addName(new ItemStack(sickleRuby, 1), Strings.SICKLES[0]);
+        
     }
 }
