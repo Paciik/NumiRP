@@ -7,11 +7,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 import num.numirp.lib.ItemIDs;
 import num.numirp.lib.Strings;
+import num.numirp.item.ItemPickaxe;
 
 public class ModItems {
     public static Item itemProcessed;
     public static ItemStack gemSapphire, gemGreenSapphire, gemRuby,
             ingotCopper, ingotTin, ingotSilver, dustNikolite, ingotTungsten;
+
+    // Pickaxes
+    public static Item pickaxeRuby, pickaxeGreenSapphire, pickaxeSapphire;
 
     public static void init() {
         itemProcessed = new ItemProcessed(ItemIDs.PROCESSED_ID);
@@ -38,6 +42,11 @@ public class ModItems {
         OreDictionary.registerOre("ingotSilver", ingotSilver);
         OreDictionary.registerOre("dustNikolite", dustNikolite);
         OreDictionary.registerOre("ingotTungsten", ingotTungsten);
+        
+        // Pickaxes
+        pickaxeRuby = new ItemPickaxe(ItemIDs.PICKAXE_RUBY_ID, 0);
+        pickaxeGreenSapphire = new ItemPickaxe(ItemIDs.PICKAXE_GREEN_SAPPHIRE_ID, 1);
+        pickaxeSapphire = new ItemPickaxe(ItemIDs.PICKAXE_SAPPHIRE_ID, 2);
 
     }
 }
