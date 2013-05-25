@@ -16,6 +16,8 @@ public class Strings {
         "Green Sapphire Pickaxe", "Sapphire Pickaxe"};
     public static final String[] SHOVELS = { "Ruby Shovel",
         "Green Sapphire Shovel", "Sapphire Shovel"};
+    public static final String[] AXES = { "Ruby Axe",
+        "Green Sapphire Axe", "Sapphire Axe"};
     
     public static final String[] DECOR = { "Marble", "Basalt",
             "MarbleBrick", "BasaltCobble", "BasaltBrick",

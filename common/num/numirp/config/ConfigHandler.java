@@ -38,11 +38,18 @@ public class ConfigHandler {
                     ItemIDs.PICKAXE_SAPPHIRE_ID_DEFAULT);
             
             ItemIDs.SHOVEL_RUBY_ID = conf.getItem("shovelRuby", ItemIDs.SHOVEL_RUBY_ID_DEFAULT).getInt(
-                    ItemIDs.PICKAXE_RUBY_ID_DEFAULT);
+                    ItemIDs.SHOVEL_RUBY_ID_DEFAULT);
             ItemIDs.SHOVEL_GREEN_SAPPHIRE_ID = conf.getItem("shovelGreenSaphire", ItemIDs.SHOVEL_GREEN_SAPPHIRE_ID_DEFAULT).getInt(
-                    ItemIDs.PICKAXE_GREEN_SAPPHIRE_ID_DEFAULT);
+                    ItemIDs.SHOVEL_GREEN_SAPPHIRE_ID_DEFAULT);
             ItemIDs.SHOVEL_SAPPHIRE_ID = conf.getItem("shovelSaphire", ItemIDs.SHOVEL_SAPPHIRE_ID_DEFAULT).getInt(
                     ItemIDs.SHOVEL_SAPPHIRE_ID_DEFAULT);
+
+            ItemIDs.AXE_RUBY_ID = conf.getItem("axeRuby", ItemIDs.AXE_RUBY_ID_DEFAULT).getInt(
+                    ItemIDs.AXE_RUBY_ID_DEFAULT);
+            ItemIDs.AXE_GREEN_SAPPHIRE_ID = conf.getItem("axeGreenSaphire", ItemIDs.AXE_GREEN_SAPPHIRE_ID_DEFAULT).getInt(
+                    ItemIDs.AXE_GREEN_SAPPHIRE_ID_DEFAULT);
+            ItemIDs.AXE_SAPPHIRE_ID = conf.getItem("axeSaphire", ItemIDs.AXE_SAPPHIRE_ID_DEFAULT).getInt(
+                    ItemIDs.AXE_SAPPHIRE_ID_DEFAULT);
             
             ItemIDs.PROCESSED_ID = conf.getItem("processed",
                     ItemIDs.PROCESSED_ID_DEFAULT).getInt(

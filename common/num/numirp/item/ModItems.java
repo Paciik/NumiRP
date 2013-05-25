@@ -17,6 +17,7 @@ public class ModItems {
     // Tools
     public static Item pickaxeRuby, pickaxeGreenSapphire, pickaxeSapphire;
     private static Item shovelRuby, shovelGreenSapphire, shovelSapphire;
+    private static Item axeRuby,axeGreenSapphire, axeSapphire;
 
     public static void init() {
         itemProcessed = new ItemProcessed(ItemIDs.PROCESSED_ID);
@@ -68,6 +69,19 @@ public class ModItems {
         shovelSapphire = new ItemShovel(ItemIDs.SHOVEL_SAPPHIRE_ID, 2);
         GameRegistry.registerItem(shovelSapphire, "shovelSapphire");
         LanguageRegistry.addName(new ItemStack(shovelSapphire, 1), Strings.SHOVELS[2]);
+
+        // Shovels
+        axeRuby = new ItemAxe(ItemIDs.AXE_RUBY_ID, 0);
+        GameRegistry.registerItem(axeRuby, "axeRuby");
+        LanguageRegistry.addName(new ItemStack(axeRuby, 1), Strings.AXES[0]);
+        
+        axeGreenSapphire = new ItemAxe(ItemIDs.AXE_GREEN_SAPPHIRE_ID, 1);
+        GameRegistry.registerItem(axeGreenSapphire, "axeGreenSapphire");
+        LanguageRegistry.addName(new ItemStack(axeGreenSapphire, 1), Strings.AXES[1]);
+        
+        axeSapphire = new ItemAxe(ItemIDs.AXE_SAPPHIRE_ID, 2);
+        GameRegistry.registerItem(axeSapphire, "axeSapphire");
+        LanguageRegistry.addName(new ItemStack(axeSapphire, 1), Strings.AXES[2]);
 
     }
 }

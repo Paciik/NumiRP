@@ -10,6 +10,10 @@ public class ItemIDs {
     public static int SHOVEL_RUBY_ID_DEFAULT = 6854;
     public static int SHOVEL_GREEN_SAPPHIRE_ID_DEFAULT = 6855;
     public static int SHOVEL_SAPPHIRE_ID_DEFAULT = 6856;
+    
+    public static int AXE_RUBY_ID_DEFAULT = 6857;
+    public static int AXE_GREEN_SAPPHIRE_ID_DEFAULT = 6858;
+    public static int AXE_SAPPHIRE_ID_DEFAULT = 6859;
 
     public static int PROCESSED_ID;
     
@@ -20,5 +24,9 @@ public class ItemIDs {
     public static int SHOVEL_RUBY_ID;
     public static int SHOVEL_GREEN_SAPPHIRE_ID;
     public static int SHOVEL_SAPPHIRE_ID;
+    
+    public static int AXE_RUBY_ID;
+    public static int AXE_GREEN_SAPPHIRE_ID;
+    public static int AXE_SAPPHIRE_ID;
 
 }
